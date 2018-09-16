@@ -37,7 +37,7 @@ public class FirstTest {
     }
 
     @Test
-    public void testSearchCancel() {
+    public void testSearchResultWithText() {
         waitForElementPresentAndClick(By.id("org.wikipedia:id/search_container"),
                 "No search field element with current id",
                 5);
@@ -47,28 +47,32 @@ public class FirstTest {
                 "No search field placeholder text",
                 5);
 
-        List<WebElement> searchResults = waitForElementsPresent(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']"),
+        List<WebElement> searchResultsTitles = waitForElementsPresent(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@resource-id='org.wikipedia:id/page_list_item_title']"),
                 "Not found elements in search results",
                 15);
 
-        Boolean resultsCountCheck = searchResults.size() > 1;
-        Assert.assertTrue(resultsCountCheck);
-
-        waitForElementPresentAndClick(By.id("org.wikipedia:id/search_close_btn"),
-                "Not found close button element",
-                5);
-
-        waitForElementNotPresent(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']"),
-                "Search results are not closed",
-                15);
+        Assert.assertTrue("Not all results have target text", checkAllResultsContainsText(searchResultsTitles, "Java"));
     }
 
-    //Метод возвращающий список всех элементов с подобным локатором. В задании указано про наличие "нескольких результатов"
     private List<WebElement> waitForElementsPresent(By by, String error_message, long timeoutValue) {
         WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
         wait.withMessage(error_message);
 
         return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
+    }
+
+    private Boolean checkAllResultsContainsText(List<WebElement> searchResults, String text) {
+        Boolean result = true;
+
+        for(int i=0; i<searchResults.size(); i++) {
+            if(!searchResults.get(i).getText().contains(text)){
+                result = false;
+                break;
+            }
+            else continue;
+        }
+
+        return result;
     }
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutValue) {
