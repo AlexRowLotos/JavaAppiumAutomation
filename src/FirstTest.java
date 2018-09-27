@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -31,6 +32,7 @@ public class FirstTest {
         capabilities.setCapability("automationName","Appium");
         capabilities.setCapability("appPackage","org.wikipedia");
         capabilities.setCapability("appActivity",".main.MainActivity");
+        capabilities.setCapability("orientation", "PORTRAIT"); //РЕШЕНИЕ ПРОБЛЕМЫ С  ОРИЕНТАЦИЕЙ
         capabilities.setCapability("app","/Users/evgenydylevsky/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
@@ -46,6 +48,35 @@ public class FirstTest {
 
         List elements = driver.findElements(by);
         return elements.size();
+    }
+
+
+    @Test
+    public void saveTwoArticlesTest2() throws InterruptedException {
+        String[] words = {
+                "Java (programming language)",
+                "Ruby (programming language)"
+        };
+
+        //====== Поиск и открытие статьи
+        waitForElementPresentAndClick(By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+                "There is no search",
+                5);
+
+        waitForElementPresentAndSendKeys(By.xpath("//*[contains(@text,'Search…')]"),
+                words[1],
+                "There is no search field",
+                5);
+
+        waitForElementPresentAndClick(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='" + words[1] + "']"),
+                "There is no expected search result",
+                5);
+        driver.rotate(ScreenOrientation.LANDSCAPE);
+        Thread.sleep(1000);
+        By titleSelector = By.xpath("//*[@resource-id='org.wikipedia:id/view_page_title_text']");
+
+        Assert.assertTrue("Title is not present", false); //assertElementPresent(titleSelector));
+
     }
 
     @Test
@@ -71,8 +102,10 @@ public class FirstTest {
 
         By titleSelector = By.xpath("//*[@resource-id='org.wikipedia:id/view_page_title_text']");
 
-        Assert.assertTrue("Title is not present",assertElementPresent(titleSelector));
+        Assert.assertFalse("Title is not present",assertElementPresent(titleSelector));
     }
+
+
 
     private boolean assertElementPresent(By by) {
       Boolean result = !driver.findElements(by).isEmpty();
