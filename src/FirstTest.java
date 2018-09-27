@@ -2,6 +2,7 @@ import com.gargoylesoftware.htmlunit.javascript.host.Touch;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import org.apache.xpath.operations.Bool;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -49,13 +50,12 @@ public class FirstTest {
 
     @Test
     public void saveTwoArticlesTest() throws InterruptedException {
-        String[] words =
-                {
-                        "Java (programming language)",
-                        "Ruby (programming language)"
-                };
+        String[] words = {
+                "Java (programming language)",
+                "Ruby (programming language)"
+        };
 
-        //====== Поиск и добавление первой статьи
+        //====== Поиск и открытие статьи
         waitForElementPresentAndClick(By.xpath("//*[contains(@text,'Search Wikipedia')]"),
                 "There is no search",
                 5);
@@ -69,94 +69,15 @@ public class FirstTest {
                 "There is no expected search result",
                 5);
 
-        waitForElementPresentAndClick(By.xpath("//android.widget.ImageView[@content-desc='More options']"),
-                "Can't find more options button",
-                5);
+        By titleSelector = By.xpath("//*[@resource-id='org.wikipedia:id/view_page_title_text']");
 
-        Thread.sleep(1000);
+        Assert.assertTrue("Title is not present",assertElementPresent(titleSelector));
+    }
 
-        waitForElementPresentAndClick(By.xpath("//*[@text='Add to reading list']"),
-                "Can't find add new article button",
-                5);
+    private boolean assertElementPresent(By by) {
+      Boolean result = !driver.findElements(by).isEmpty();
 
-        waitForElementPresentAndClick(By.id("org.wikipedia:id/onboarding_button"),
-                "Can't find add new directory button",
-                5);
-
-        waitForElementAndClear(By.id("org.wikipedia:id/text_input"),
-                "There is no text input for clear",
-                5);
-
-        waitForElementPresentAndSendKeys(By.id("org.wikipedia:id/text_input"),
-                words[0],
-                "There is no text input for sendkeys",
-                5);
-
-        waitForElementPresentAndClick(By.xpath("//*[@text='OK']"),
-                "Can't find OK button",
-                5);
-
-        waitForElementPresentAndClick(By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
-                "Cannot find button X",
-                5);
-
-        waitForElementPresentAndClick(By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "There is no search",
-                5);
-
-        //====== Поиск и добавление второй статьи
-        waitForElementPresentAndSendKeys(By.xpath("//*[contains(@text,'Search…')]"),
-                words[1],
-                "There is no search field",
-                5);
-
-        waitForElementPresentAndClick(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='" + words[1] + "']"),
-                "There is no expected search result",
-                5);
-
-        waitForElementPresentAndClick(By.xpath("//android.widget.ImageView[@content-desc='More options']"),
-                "Can't find more options button",
-                5);
-
-        Thread.sleep(1000);
-
-        waitForElementPresentAndClick(By.xpath("//*[@class='android.widget.FrameLayout']/*[@class='android.widget.ListView']//*[@text='Add to reading list']"),
-                "Can't find add new article button",
-                5);
-
-        waitForElementPresentAndClick(By.xpath("//*[@class='android.widget.LinearLayout']//*[@text='" + words[0] + "']"),
-                "Cant find created directory button",
-                5);
-
-        waitForElementPresentAndClick(By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
-                "Cannot find button X",
-                5);
-
-        //====== Блок с удалением
-        waitForElementPresentAndClick(By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),
-                "cannot find my lists button",
-                5);
-
-        Thread.sleep(1000);
-
-        waitForElementPresentAndClick(By.xpath("//*[@text='" + words[0] + "']"),
-                "cannot find expected article in list",
-                5);
-
-        swipeElemendToLeft(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='" + words[0] + "']"),
-                "can't swipe to element to delete");
-
-        waitForElementNotPresent(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='" + words[0] + "']"),
-                "Element not deleted after swipe",
-                5);
-
-        waitForElementPresentAndClick(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='" + words[1] + "']"),
-                "Second element was deleted as not expected",
-                5);
-
-        String titleForAssert = getAttributeValueOfElement(By.xpath("//*[@resource-id='org.wikipedia:id/view_page_title_text']"), "text");
-
-        Assert.assertTrue("Title is not expected", titleForAssert.equals(words[1]));
+      return result;
     }
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutValue) {
