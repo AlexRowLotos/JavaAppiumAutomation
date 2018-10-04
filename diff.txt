@@ -1,0 +1,3125 @@
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+new file mode 100644
+index 0000000..e96534f
+--- /dev/null
++++ b/.idea/uiDesigner.xml
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+index 1cf472e..b33c942 100644
+--- a/.idea/workspace.xml
++++ b/.idea/workspace.xml
+@@ -1,7 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="23f27529-d0c1-4ab0-8825-0247ddfb318e" name="Default Changelist" comment="" />
++    <list default="true" id="23f27529-d0c1-4ab0-8825-0247ddfb318e" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/src/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchTests.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" afterDir="false" />
++    </list>
+     <ignored path="$PROJECT_DIR$/out/" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -13,51 +16,161 @@
+     <session id="207525332">
+       <usages-collector id="statistics.lifecycle.project">
+         <counts>
++          <entry key="project.closed" value="10" />
++          <entry key="project.open.time.1" value="2" />
++          <entry key="project.open.time.11" value="1" />
+           <entry key="project.open.time.2" value="1" />
+-          <entry key="project.opened" value="1" />
++          <entry key="project.open.time.5" value="5" />
++          <entry key="project.open.time.6" value="2" />
++          <entry key="project.opened" value="11" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.extensions.open">
+         <counts>
++          <entry key="class" value="6" />
+           <entry key="iml" value="1" />
+-          <entry key="java" value="1" />
++          <entry key="java" value="11" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.types.open">
+         <counts>
++          <entry key="CLASS" value="6" />
+           <entry key="IDEA_MODULE" value="1" />
+-          <entry key="JAVA" value="1" />
++          <entry key="JAVA" value="11" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.extensions.edit">
+         <counts>
+-          <entry key="java" value="466" />
++          <entry key="dummy" value="12" />
++          <entry key="java" value="13681" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.types.edit">
+         <counts>
+-          <entry key="JAVA" value="466" />
++          <entry key="JAVA" value="13681" />
++          <entry key="PLAIN_TEXT" value="12" />
+         </counts>
+       </usages-collector>
+     </session>
+   </component>
+   <component name="FileEditorManager">
+-    <leaf>
++    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/JavaAppiumAutomation.iml">
+-          <provider selected="true" editor-type-id="text-editor" />
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="195">
++              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/ArticleTests.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="124">
++              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++            </state>
++          </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
++        <entry file="file://$PROJECT_DIR$/src/SearchTests.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-135">
+-              <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
++            <state relative-caret-position="289">
++              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+               <folding>
+-                <element signature="e#1037#1038#0" expanded="true" />
+-                <element signature="e#1062#1063#0" expanded="true" />
+-                <element signature="e#1096#1097#0" expanded="true" />
+-                <element signature="e#1125#1126#0" expanded="true" />
++                <element signature="imports" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/ListDetailsPageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="105">
++              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#157#158#0" expanded="true" />
++                <element signature="e#186#187#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="300">
++              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#148#149#0" expanded="true" />
++                <element signature="e#177#178#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="1179">
++              <caret line="81" column="49" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="49" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#2300#2301#0" expanded="true" />
++                <element signature="e#2401#2402#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="331">
++              <caret line="84" column="41" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="41" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#452#453#0" expanded="true" />
++                <element signature="e#481#482#0" expanded="true" />
++                <element signature="e#657#658#0" expanded="true" />
++                <element signature="e#721#722#0" expanded="true" />
++                <element signature="e#756#757#0" expanded="true" />
++                <element signature="e#840#841#0" expanded="true" />
++                <element signature="e#2235#2236#0" expanded="true" />
++                <element signature="e#2286#2287#0" expanded="true" />
++                <element signature="e#3135#3136#0" expanded="true" />
++                <element signature="e#3170#3171#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="272">
++              <caret line="144" column="40" lean-forward="true" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="40" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="255">
++              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
++              <folding>
++                <element signature="imports" expanded="true" />
+               </folding>
+             </state>
+           </provider>
+@@ -72,24 +185,50 @@
+       </list>
+     </option>
+   </component>
++  <component name="FindInProjectRecents">
++    <findStrings>
++      <find>btn</find>
++      <find>title</find>
++      <find>asse</find>
++      <find>//*[@resource-id='org.wikipedia:id/page_list_item_title']</find>
++    </findStrings>
++    <replaceStrings>
++      <replace />
++    </replaceStrings>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
++        <option value="$PROJECT_DIR$/src/lib/CoreTestCase.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/ListDetailsPageObject.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" />
+         <option value="$PROJECT_DIR$/src/FirstTest.java" />
++        <option value="$PROJECT_DIR$/src/ArticleTests.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" />
++        <option value="$PROJECT_DIR$/src/SearchTests.java" />
+       </list>
+     </option>
+   </component>
+   <component name="ProjectFrameBounds">
++    <option name="x" value="372" />
+     <option name="y" value="22" />
+-    <option name="width" value="1440" />
++    <option name="width" value="1068" />
+     <option name="height" value="878" />
+   </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectView">
+     <navigator proportions="" version="1">
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
+       <pane id="AndroidView" />
++      <pane id="Scope" />
++      <pane id="PackagesPane" />
+       <pane id="ProjectPane">
+         <subPane>
+           <expand>
+@@ -114,21 +253,33 @@
+             </path>
+             <path>
+               <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
++              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
++              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="lib" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
++              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="lib" type="462c0819:PsiDirectoryNode" />
++              <item name="ui" type="462c0819:PsiDirectoryNode" />
+             </path>
+           </expand>
+           <select />
+         </subPane>
+       </pane>
+-      <pane id="PackagesPane" />
+-      <pane id="Scope" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536611175130" />
+-    <property name="project.structure.last.edited" value="Libraries" />
+-    <property name="project.structure.proportion" value="0.0" />
+-    <property name="project.structure.side.proportion" value="0.0" />
++    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538696090876" />
++    <property name="project.structure.last.edited" value="SDKs" />
++    <property name="project.structure.proportion" value="0.15" />
++    <property name="project.structure.side.proportion" value="0.2" />
+   </component>
+   <component name="RunDashboard">
+     <option name="ruleStates">
+@@ -142,33 +293,78 @@
+       </list>
+     </option>
+   </component>
+-  <component name="RunManager" selected="JUnit.FirstTest.firstTest">
+-    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="JUnit.SearchTests">
++    <configuration name="ArticleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="JavaAppiumAutomation" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ArticleTests.checkSearchlaceholderText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="JavaAppiumAutomation" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <option name="METHOD_NAME" value="checkSearchlaceholderText" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ArticleTests.testArticleMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="JavaAppiumAutomation" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <option name="METHOD_NAME" value="testArticleMatch" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ArticleTests.testSearchCancel" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+       <module name="JavaAppiumAutomation" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <option name="METHOD_NAME" value="testSearchCancel" />
++      <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="FirstTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="ArticleTests.testSearchResultWithText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="JavaAppiumAutomation" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+-      <option name="METHOD_NAME" value="firstTest" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <option name="METHOD_NAME" value="testSearchResultWithText" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="SearchTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="JavaAppiumAutomation" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="SearchTests" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <list>
+-      <item itemvalue="JUnit.FirstTest" />
+-      <item itemvalue="JUnit.FirstTest.firstTest" />
++      <item itemvalue="JUnit.ArticleTests.testSearchCancel" />
++      <item itemvalue="JUnit.ArticleTests" />
++      <item itemvalue="JUnit.ArticleTests.testArticleMatch" />
++      <item itemvalue="JUnit.ArticleTests.checkSearchlaceholderText" />
++      <item itemvalue="JUnit.ArticleTests.testSearchResultWithText" />
++      <item itemvalue="JUnit.SearchTests" />
+     </list>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="JUnit.FirstTest.firstTest" />
+-        <item itemvalue="JUnit.FirstTest" />
++        <item itemvalue="JUnit.SearchTests" />
++        <item itemvalue="JUnit.ArticleTests" />
++        <item itemvalue="JUnit.ArticleTests.testSearchResultWithText" />
++        <item itemvalue="JUnit.ArticleTests.checkSearchlaceholderText" />
++        <item itemvalue="JUnit.ArticleTests.testArticleMatch" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -183,76 +379,277 @@
+     <servers />
+   </component>
+   <component name="TestHistory">
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 10m 35s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 12m 10s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
++    </history-entry>
++    <history-entry file="SearchTests - 2018.10.05 at 02h 19m 56s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
++    </history-entry>
++    <history-entry file="SearchTests - 2018.10.05 at 02h 29m 56s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 11m 59s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 30m 20s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 13m 40s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 31m 48s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 14m 05s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 32m 24s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 16m 36s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 32m 49s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 17m 23s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 33m 15s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest_firstTest - 2018.09.10 at 23h 18m 24s.xml">
+-      <configuration name="FirstTest.firstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 34m 08s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
++    </history-entry>
++    <history-entry file="SearchTests - 2018.10.05 at 02h 34m 35s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+   </component>
+   <component name="ToolWindowManager">
+-    <frame x="0" y="22" width="1440" height="878" extended-state="0" />
++    <frame x="372" y="22" width="1068" height="878" extended-state="0" />
+     <editor active="true" />
+     <layout>
+-      <window_info id="Image Layers" />
+-      <window_info id="Designer" />
+-      <window_info id="UI Designer" />
+-      <window_info id="Capture Tool" />
+-      <window_info id="Favorites" side_tool="true" />
+-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
++      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2631579" />
+       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+-      <window_info anchor="bottom" id="Terminal" />
+-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+-      <window_info anchor="bottom" id="Messages" />
++      <window_info id="Image Layers" order="2" />
++      <window_info id="Designer" order="3" />
++      <window_info id="UI Designer" order="4" />
++      <window_info id="Capture Tool" order="5" />
++      <window_info id="Favorites" order="6" side_tool="true" />
+       <window_info anchor="bottom" id="Message" order="0" />
+       <window_info anchor="bottom" id="Find" order="1" />
+-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32951653" />
+-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32824427" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.3778626" />
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+       <window_info anchor="bottom" id="TODO" order="6" />
+-      <window_info anchor="right" id="Palette" />
+-      <window_info anchor="right" id="Theme Preview" />
+-      <window_info anchor="right" id="Capture Analysis" />
+-      <window_info anchor="right" id="Palette&#9;" />
+-      <window_info anchor="right" id="Maven Projects" />
++      <window_info anchor="bottom" id="Terminal" order="7" />
++      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
++      <window_info anchor="bottom" id="Version Control" order="9" />
++      <window_info anchor="bottom" id="Messages" order="10" weight="0.32951653" />
+       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++      <window_info anchor="right" id="Palette" order="3" />
++      <window_info anchor="right" id="Capture Analysis" order="4" />
++      <window_info anchor="right" id="Theme Preview" order="5" />
++      <window_info anchor="right" id="Palette&#9;" order="6" />
++      <window_info anchor="right" id="Maven Projects" order="7" />
+     </layout>
++    <layout-to-restore>
++      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
++      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
++      <window_info id="Image Layers" order="2" />
++      <window_info id="Designer" order="3" />
++      <window_info id="UI Designer" order="4" />
++      <window_info id="Capture Tool" order="5" />
++      <window_info id="Favorites" order="6" side_tool="true" />
++      <window_info anchor="bottom" id="Message" order="0" />
++      <window_info anchor="bottom" id="Find" order="1" />
++      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32951653" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
++      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
++      <window_info anchor="bottom" id="TODO" order="6" />
++      <window_info anchor="bottom" id="Terminal" order="7" />
++      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
++      <window_info anchor="bottom" id="Version Control" order="9" />
++      <window_info anchor="bottom" id="Messages" order="10" />
++      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
++      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
++      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++      <window_info anchor="right" id="Palette" order="3" />
++      <window_info anchor="right" id="Capture Analysis" order="4" />
++      <window_info anchor="right" id="Theme Preview" order="5" />
++      <window_info anchor="right" id="Palette&#9;" order="6" />
++      <window_info anchor="right" id="Maven Projects" order="7" />
++    </layout-to-restore>
+   </component>
+   <component name="VcsContentAnnotationSettings">
+     <option name="myLimit" value="2678400000" />
+   </component>
++  <component name="debuggerHistoryManager">
++    <expressions id="evaluateExpression">
++      <expression>
++        <expression-string>target_results.get(0).getText()</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.size()</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>first_result.getText()</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(2).equals(first_result)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(1).equals(first_result)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(0).equals(first_result)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(0).getAttribute(&quot;)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(0).getAttribute(&quot;size&quot;)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(0).getAttribute(&quot;value&quot;)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++    </expressions>
++  </component>
+   <component name="editorHistoryManager">
++    <entry file="jar://$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="21">
++          <caret line="114" column="48" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="jar://$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/org/openqa/selenium/support/ui/WebDriverWait.class">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="213">
++          <caret line="34" selection-start-line="34" selection-end-line="34" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Object.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="464">
++          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="jar://$PROJECT_DIR$/libs/junit-4.10.jar!/org/junit/Assert.class">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="90">
++          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
++        </state>
++      </provider>
++    </entry>
+     <entry file="file://$PROJECT_DIR$/JavaAppiumAutomation.iml">
+-      <provider selected="true" editor-type-id="text-editor" />
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="195">
++          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="255">
++          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="331">
++          <caret line="84" column="41" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="41" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="e#452#453#0" expanded="true" />
++            <element signature="e#481#482#0" expanded="true" />
++            <element signature="e#657#658#0" expanded="true" />
++            <element signature="e#721#722#0" expanded="true" />
++            <element signature="e#756#757#0" expanded="true" />
++            <element signature="e#840#841#0" expanded="true" />
++            <element signature="e#2235#2236#0" expanded="true" />
++            <element signature="e#2286#2287#0" expanded="true" />
++            <element signature="e#3135#3136#0" expanded="true" />
++            <element signature="e#3170#3171#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/ArticleTests.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="124">
++          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="272">
++          <caret line="144" column="40" lean-forward="true" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="40" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="300">
++          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="e#148#149#0" expanded="true" />
++            <element signature="e#177#178#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/ListDetailsPageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="105">
++          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="e#157#158#0" expanded="true" />
++            <element signature="e#186#187#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="1179">
++          <caret line="81" column="49" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="49" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="e#2300#2301#0" expanded="true" />
++            <element signature="e#2401#2402#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
++    <entry file="file://$PROJECT_DIR$/src/SearchTests.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-135">
+-          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
++        <state relative-caret-position="289">
++          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+           <folding>
+-            <element signature="e#1037#1038#0" expanded="true" />
+-            <element signature="e#1062#1063#0" expanded="true" />
+-            <element signature="e#1096#1097#0" expanded="true" />
+-            <element signature="e#1125#1126#0" expanded="true" />
++            <element signature="imports" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+@@ -322,7 +719,7 @@
+       </state>
+       <state key="ProjectLibrariesConfigurable.UI">
+         <settings>
+-          <last-edited>selenium-server-standalone-3.4.0</last-edited>
++          <last-edited>java-client-4.1.2</last-edited>
+           <splitter-proportions>
+             <option name="proportions">
+               <list>
+diff --git a/src/ArticleTests.java b/src/ArticleTests.java
+new file mode 100644
+index 0000000..96a8201
+--- /dev/null
++++ b/src/ArticleTests.java
+@@ -0,0 +1,63 @@
++import lib.CoreTestCase;
++
++import lib.ui.ArticlePageObject;
++import lib.ui.ListDetailsPageObject;
++import lib.ui.MyListsPageObject;
++import lib.ui.SearchPageObject;
++import org.junit.Test;
++
++
++
++public class ArticleTests extends CoreTestCase {
++
++    protected void setUp() throws Exception {
++        super.setUp();
++    }
++
++    @Test
++    public void testAddTwoArticles() throws InterruptedException {
++        String[] words = {
++                "Java (programming language)",
++                "Ruby (programming language)"
++        };
++
++        String myList = "OOP";
++
++        SearchPageObject searchPageObject = new SearchPageObject(driver);
++
++        searchPageObject.initSearchInput();
++        searchPageObject.typeSearchText(words[0]);
++        searchPageObject.waitForSearchResult(words[0]);
++        searchPageObject.clickByArticleWithSubstring(words[0]);
++
++        ArticlePageObject articlePageObject = new ArticlePageObject(driver);
++
++        articlePageObject.waitForTitleElemet();
++        articlePageObject.addArticleToMyNewList(myList);
++        articlePageObject.returnToSearch();
++
++        searchPageObject.initSearchInput();
++        searchPageObject.typeSearchText(words[1]);
++        searchPageObject.waitForSearchResult(words[1]);
++        searchPageObject.clickByArticleWithSubstring(words[1]);
++
++        articlePageObject.waitForTitleElemet();
++        articlePageObject.addArticleToExistingList(myList);
++        articlePageObject.returnToSearch();
++
++        searchPageObject.goToMyLists();
++        Thread.sleep(1000);
++        MyListsPageObject myListsPageObject = new MyListsPageObject(driver);
++        myListsPageObject.openList(myList);
++
++        ListDetailsPageObject listDetailsPageObject = new ListDetailsPageObject(driver);
++        listDetailsPageObject.deleteArticle(words[1]);
++
++        assertFalse(listDetailsPageObject.isArticlePresent(words[1]));
++
++        listDetailsPageObject.openArticle(words[0]);
++        articlePageObject.assertArticleTitleIs(words[0]);
++    }
++
++
++}
+diff --git a/src/FirstTest.java b/src/FirstTest.java
+deleted file mode 100644
+index 90a3a0f..0000000
+--- a/src/FirstTest.java
++++ /dev/null
+@@ -1,119 +0,0 @@
+-import io.appium.java_client.AppiumDriver;
+-import io.appium.java_client.android.AndroidDriver;
+-import org.junit.After;
+-import org.junit.Assert;
+-import org.junit.Before;
+-import org.junit.Test;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.remote.DesiredCapabilities;
+-import org.openqa.selenium.support.ui.ExpectedConditions;
+-import org.openqa.selenium.support.ui.WebDriverWait;
+-
+-import java.net.URL;
+-import java.util.List;
+-
+-public class FirstTest {
+-    private AppiumDriver driver;
+-
+-    @Before
+-    public void setUp() throws Exception {
+-        DesiredCapabilities capabilities = new DesiredCapabilities();
+-
+-        capabilities.setCapability("platformName","Android");
+-        capabilities.setCapability("deviceName","AndroidTestDevice");
+-        capabilities.setCapability("platformVersion","6.0");
+-        capabilities.setCapability("automationName","Appium");
+-        capabilities.setCapability("appPackage","org.wikipedia");
+-        capabilities.setCapability("appActivity",".main.MainActivity");
+-        capabilities.setCapability("app","/Users/evgenydylevsky/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
+-
+-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+-    }
+-
+-    @After
+-    public void tearDown() {
+-        driver.quit();
+-    }
+-
+-    @Test
+-    public void testSearchResultWithText() {
+-        waitForElementPresentAndClick(By.id("org.wikipedia:id/search_container"),
+-                "No search field element with current id",
+-                5);
+-
+-        waitForElementPresentAndSendKeys(By.xpath("//*[contains(@text, 'Search…')]"),
+-                "Java",
+-                "No search field placeholder text",
+-                5);
+-
+-        List<WebElement> searchResultsTitles = waitForElementsPresent(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@resource-id='org.wikipedia:id/page_list_item_title']"),
+-                "Not found elements in search results",
+-                15);
+-
+-        Assert.assertTrue("Not all results have target text", checkAllResultsContainsText(searchResultsTitles, "Java"));
+-    }
+-
+-    private List<WebElement> waitForElementsPresent(By by, String error_message, long timeoutValue) {
+-        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
+-        wait.withMessage(error_message);
+-
+-        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
+-    }
+-
+-    private Boolean checkAllResultsContainsText(List<WebElement> searchResults, String text) {
+-        Boolean result = true;
+-
+-        for(int i=0; i<searchResults.size(); i++) {
+-            if(!searchResults.get(i).getText().contains(text)){
+-                result = false;
+-                break;
+-            }
+-            else continue;
+-        }
+-
+-        return result;
+-    }
+-
+-    private WebElement waitForElementPresent(By by, String error_message, long timeoutValue) {
+-        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
+-        wait.withMessage(error_message);
+-
+-        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
+-    }
+-
+-    private WebElement waitForElementPresent(By by, String error_message) {
+-        WebDriverWait wait = new WebDriverWait(driver, 5);
+-        wait.withMessage(error_message);
+-
+-        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
+-    }
+-
+-    private WebElement waitForElementPresentAndClick(By by, String error_message, long timeoutValue) {
+-        WebElement element = waitForElementPresent(by , error_message, timeoutValue);
+-        element.click();
+-
+-        return element;
+-    }
+-
+-    private WebElement waitForElementPresentAndSendKeys(By by, String value, String error_message, long timeoutValue) {
+-        WebElement element = waitForElementPresent(by, error_message, timeoutValue);
+-        element.sendKeys(value);
+-
+-        return element;
+-    }
+-
+-    private boolean waitForElementNotPresent(By by, String  error_message, long timeoutValue) {
+-        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
+-        wait.withMessage(error_message);
+-
+-        return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+-    }
+-
+-    private WebElement waitForElementAndClear(By by, String error_message, long timeoutValue) {
+-        WebElement element = waitForElementPresent(by, error_message, timeoutValue);
+-        element.clear();
+-
+-        return element;
+-    }
+-}
+\ No newline at end of file
+diff --git a/src/SearchTests.java b/src/SearchTests.java
+new file mode 100644
+index 0000000..172029e
+--- /dev/null
++++ b/src/SearchTests.java
+@@ -0,0 +1,69 @@
++import lib.CoreTestCase;
++import lib.ui.ArticlePageObject;
++import lib.ui.SearchPageObject;
++import org.junit.Test;
++import org.openqa.selenium.WebElement;
++
++import java.util.List;
++
++public class SearchTests extends CoreTestCase {
++
++    protected void setUp() throws Exception {
++        super.setUp();
++    }
++//
++//    @Test
++//    public void testCancelSearch() {
++//        String search_word = "Java";
++//
++//        SearchPageObject searchPageObject = new SearchPageObject(driver);
++//
++//        searchPageObject.initSearchInput();
++//        searchPageObject.typeSearchText(search_word);
++//        searchPageObject.waitForSearchResult("Java");
++//        searchPageObject.clickCancelSearch();
++//
++//        assertTrue(searchPageObject.isSearchEmpty(search_word));
++//    }
++//
++//    @Test
++//    public void testCheckArticleTitle()  {
++//        String[] words = {
++//                "Java (programming language)",
++//                "Ruby (programming language)"
++//        };
++//
++//        SearchPageObject searchPageObject = new SearchPageObject(driver);
++//
++//        searchPageObject.initSearchInput();
++//        searchPageObject.typeSearchText(words[0]);
++//        searchPageObject.waitForSearchResult(words[0]);
++//        searchPageObject.clickByArticleWithSubstring(words[0]);
++//
++//        ArticlePageObject articlePageObject = new ArticlePageObject(driver);
++//        assertTrue(articlePageObject.assertTitleIsPresent());
++//    }
++
++
++    @Test
++    public void testMultipleConditionsSearch() throws Exception {
++        String[] correctResult_1 = {
++                "Java",
++                "Island of Indonesia"
++        };
++
++        SearchPageObject searchPageObject = new SearchPageObject(driver);
++
++        searchPageObject.initSearchInput();
++        searchPageObject.typeSearchText(correctResult_1[0]);
++        List<WebElement> target_results = searchPageObject.getSearchResultsList();
++
++        searchPageObject.waitForElementByTitleAndDescription(correctResult_1[0], correctResult_1[1]);
++
++        for(int i=0; i<3; i++) {
++            assertTrue("element "  + i + " is not correct search result", target_results.get(i).getText().equals(correctResult_1[0]));
++        }
++
++    }
++
++}
+diff --git a/src/lib/CoreTestCase.java b/src/lib/CoreTestCase.java
+new file mode 100644
+index 0000000..20d56a2
+--- /dev/null
++++ b/src/lib/CoreTestCase.java
+@@ -0,0 +1,43 @@
++package lib;
++
++import io.appium.java_client.AppiumDriver;
++import io.appium.java_client.android.AndroidDriver;
++import junit.framework.TestCase;
++import org.junit.After;
++import org.junit.Before;
++import org.openqa.selenium.remote.DesiredCapabilities;
++
++import java.net.URL;
++
++public class CoreTestCase extends TestCase {
++
++    protected AppiumDriver driver;
++    private static String AppiumUrl = "http://127.0.0.1:4723/wd/hub";
++
++    @Before
++    protected void setUp() throws Exception {
++        super.setUp();
++
++        DesiredCapabilities capabilities = new DesiredCapabilities();
++
++        capabilities.setCapability("platformName","Android");
++        capabilities.setCapability("deviceName","AndroidTestDevice");
++        capabilities.setCapability("platformVersion","6.0");
++        capabilities.setCapability("automationName","Appium");
++        capabilities.setCapability("appPackage","org.wikipedia");
++        capabilities.setCapability("appActivity",".main.MainActivity");
++        capabilities.setCapability("orientation", "PORTRAIT"); //РЕШЕНИЕ ПРОБЛЕМЫ С  ОРИЕНТАЦИЕЙ
++        capabilities.setCapability("app","/Users/evgenydylevsky/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
++
++        driver = new AndroidDriver(new URL(AppiumUrl), capabilities);
++    }
++
++    @After
++    public void tearDown() throws Exception {
++        super.tearDown();
++
++        driver.quit();
++    }
++
++
++}
+diff --git a/src/lib/ui/ArticlePageObject.java b/src/lib/ui/ArticlePageObject.java
+new file mode 100644
+index 0000000..3a6dd5a
+--- /dev/null
++++ b/src/lib/ui/ArticlePageObject.java
+@@ -0,0 +1,88 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++
++public class ArticlePageObject extends MainPageObject {
++
++    private static final String
++        TITLE_ID = "org.wikipedia:id/view_page_title_text",
++        FOOTER_ELEMENT = "//*[@text='View page in browser']",
++        MORE_OPTIONS_MENU = "//android.widget.ImageView[@content-desc='More options']",
++        ADD_TO_READING_LIST_OPTION = "//*[@text='Add to reading list']",
++        ONBOARDING_BUTTON = "org.wikipedia:id/onboarding_button",
++        DIRECTORY_NAME_INPUT = "org.wikipedia:id/text_input",
++        OK_BUTTON = "//*[@text='OK']",
++        RETURN_BUTTON = "//android.widget.ImageButton[@content-desc='Navigate up']",
++        EXISTED_LIST_TPL = "//*[@class='android.widget.LinearLayout']//*[@text='(SUBSTRING)']";
++
++
++
++
++    public ArticlePageObject(AppiumDriver driver){
++        super(driver);
++    }
++
++    public WebElement waitForTitleElemet() {
++        return this.waitForElementPresent(By.id(TITLE_ID), "no title of article",5);
++    }
++
++    public String getArticleTitle() {
++        return waitForTitleElemet().getAttribute("text");
++    }
++
++    public void swipeToFooter() {
++        this.swipeUpToFindElement(By.xpath(FOOTER_ELEMENT), "no footer", 20);
++    }
++
++
++    public void openMoreOptions() throws InterruptedException {
++        this.waitForElementPresentAndClick(By.xpath(MORE_OPTIONS_MENU), "There is no more option menu", 5);
++        Thread.sleep(1000);
++    }
++
++    public void clickAddToReadingListOption() {
++        this.waitForElementPresentAndClick(By.xpath(ADD_TO_READING_LIST_OPTION), "there is no option", 5);
++    }
++
++    public void closeOnboarding() {
++        this.waitForElementPresentAndClick(By.id(ONBOARDING_BUTTON), "there is no onboarding button", 5);
++    }
++
++    public void enterListName(String name) {
++        this.waitForElementAndClear(By.id(DIRECTORY_NAME_INPUT),"there is no name input for clear", 5);
++        this.waitForElementPresentAndSendKeys(By.id(DIRECTORY_NAME_INPUT), name,"there is no name input", 5);
++        this.waitForElementPresentAndClick(By.xpath(OK_BUTTON), "there is no confrim name button", 5);
++    }
++
++    public void addArticleToMyNewList(String listName) throws InterruptedException {
++        openMoreOptions();
++        clickAddToReadingListOption();
++        closeOnboarding();
++        enterListName(listName);
++    }
++
++    public void addArticleToExistingList(String name) throws InterruptedException{
++        openMoreOptions();
++        clickAddToReadingListOption();
++        this.waitForElementPresentAndClick(By.xpath(getExistingListElement(name)), "no list",5);
++    }
++
++    public void returnToSearch() {
++        this.waitForElementPresentAndClick(By.xpath(RETURN_BUTTON), "no return button", 5);
++    }
++
++    private static String getExistingListElement(String substring) {
++        return  EXISTED_LIST_TPL.replace("(SUBSTRING)",substring);
++    }
++
++    public boolean assertArticleTitleIs(String name) {
++        String articleTitle = this.getArticleTitle();
++        return articleTitle.equals(name);
++    }
++
++    public boolean assertTitleIsPresent() {
++        return assertElementPresent(By.id(TITLE_ID));
++    }
++}
+diff --git a/src/lib/ui/ListDetailsPageObject.java b/src/lib/ui/ListDetailsPageObject.java
+new file mode 100644
+index 0000000..9554d87
+--- /dev/null
++++ b/src/lib/ui/ListDetailsPageObject.java
+@@ -0,0 +1,33 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import org.openqa.selenium.By;
++
++public class ListDetailsPageObject extends MainPageObject {
++
++    private static final String
++        ARTICLE_ELEMENT_TPL = "//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='(SUBSTRING)']";
++
++
++    public ListDetailsPageObject(AppiumDriver driver){
++        super(driver);
++    }
++
++
++    private static String getArticleElement(String substring) {
++        return  ARTICLE_ELEMENT_TPL.replace("(SUBSTRING)",substring);
++    }
++
++    public void deleteArticle(String name) {
++        this.swipeElemendToLeft(By.xpath(getArticleElement(name)), "no selected article");
++    }
++
++    public void openArticle(String name) {
++        this.waitForElementPresentAndClick(By.xpath(getArticleElement(name)), "no selected article",5);
++    }
++
++    public boolean isArticlePresent(String name) {
++       return !this.waitForElementNotPresent(By.xpath(getArticleElement(name)), "article present",5);
++    }
++
++}
+diff --git a/src/lib/ui/MainPageObject.java b/src/lib/ui/MainPageObject.java
+new file mode 100644
+index 0000000..471a522
+--- /dev/null
++++ b/src/lib/ui/MainPageObject.java
+@@ -0,0 +1,151 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import io.appium.java_client.TouchAction;
++import org.openqa.selenium.By;
++import org.openqa.selenium.Dimension;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.support.ui.ExpectedConditions;
++import org.openqa.selenium.support.ui.WebDriverWait;
++
++import java.util.List;
++
++public class MainPageObject {
++    protected AppiumDriver driver;
++
++    public MainPageObject(AppiumDriver driver) {
++        this.driver = driver;
++    }
++
++
++    public int getAmountOfSearchElements(By by ) {
++
++        List elements = driver.findElements(by);
++        return elements.size();
++    }
++
++    public boolean assertElementPresent(By by) {
++        Boolean result = !driver.findElements(by).isEmpty();
++
++        return result;
++    }
++
++    public WebElement waitForElementPresent(By by, String error_message, long timeoutValue) {
++        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
++        wait.withMessage(error_message);
++
++        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
++    }
++
++    public WebElement waitForElementPresent(By by, String error_message) {
++        WebDriverWait wait = new WebDriverWait(driver, 5);
++        wait.withMessage(error_message);
++
++        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
++    }
++
++    public WebElement waitForElementPresentAndClick(By by, String error_message, long timeoutValue) {
++        WebElement element = waitForElementPresent(by , error_message, timeoutValue);
++        element.click();
++
++        return element;
++    }
++
++    public WebElement waitForElementPresentAndSendKeys(By by, String value, String error_message, long timeoutValue) {
++        WebElement element = waitForElementPresent(by, error_message, timeoutValue);
++        element.sendKeys(value);
++
++        return element;
++    }
++
++    public boolean waitForElementNotPresent(By by, String  error_message, long timeoutValue) {
++        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
++        wait.withMessage(error_message);
++
++        return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
++    }
++
++    public WebElement waitForElementAndClear(By by, String error_message, long timeoutValue) {
++        WebElement element = waitForElementPresent(by, error_message, timeoutValue);
++        element.clear();
++
++        return element;
++    }
++
++    //Метод для проверки наличия плейсходера в поле поиска
++    public Boolean waitIsPlaceholderSearchPresent(String error_message, long timeoutValue) {
++        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
++        wait.withMessage(error_message);
++        By by = (By.id("org.wikipedia:id/search_src_text"));
++
++        return wait.until(ExpectedConditions.attributeContains(by,"text", "Search…"));
++    }
++
++    public void swipeUp(int timeOfSwipe) {
++        TouchAction action = new TouchAction(driver);
++        Dimension size = driver.manage().window().getSize();
++        int x = size.width/2;
++        int start_y = (int) (size.height * 0.8);
++        int end_y = (int) (size.height * 0.2);
++
++        action
++                .press(x, start_y)
++                .waitAction(timeOfSwipe)
++                .moveTo(x, end_y)
++                .release()
++                .perform();
++    }
++
++    public void swipeUpQuick() {
++        swipeUp(200);
++    }
++
++    public void swipeUpToFindElement(By by, String error_message, int max_swipes){
++        int already_swiped = 0;
++        while(driver.findElements(by).size() == 0) {
++
++            if(already_swiped > max_swipes) {
++                waitForElementPresent(by, "cannot find via swipe" + error_message, 5);
++                return;
++            }
++
++            swipeUpQuick();
++            ++already_swiped;
++        }
++    }
++    protected void swipeElemendToLeft(By by, String error_message) {
++        WebElement element = waitForElementPresent(by, error_message, 10);
++
++        int left_x = element.getLocation().getX();
++        int right_x = left_x + element.getSize().getWidth();
++        int upper_y = element.getLocation().getY();
++        int lower_y = upper_y + element.getSize().getHeight();
++        int middle_y = (upper_y + lower_y)/2;
++
++        TouchAction action = new TouchAction(driver);
++        action
++                .press(right_x, middle_y)
++                .waitAction()
++                .waitAction(150)
++                .moveTo(left_x,middle_y)
++                .release()
++                .perform();
++    }
++
++    public String getAttributeValueOfElement(By by, String attribute) {
++        WebElement element = waitForElementPresent(by, "Can't parse attribute");
++        String attributeValue = element.getAttribute(attribute);
++
++        return attributeValue;
++    }
++
++
++    public List<WebElement> waitForElementsPresent(By by, String error_message, long timeoutValue) {
++        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
++        wait.withMessage(error_message);
++
++        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
++    }
++
++
++}
+diff --git a/src/lib/ui/MyListsPageObject.java b/src/lib/ui/MyListsPageObject.java
+new file mode 100644
+index 0000000..93fdfa9
+--- /dev/null
++++ b/src/lib/ui/MyListsPageObject.java
+@@ -0,0 +1,22 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import org.openqa.selenium.By;
++
++public class MyListsPageObject extends MainPageObject {
++
++    private static final String
++        LIST_ELEMENT_TPL = "//*[@text='(SUBSTRING)']";
++
++    public MyListsPageObject(AppiumDriver driver){
++        super(driver);
++    }
++
++    private static String getListElement(String substring) {
++        return  LIST_ELEMENT_TPL.replace("(SUBSTRING)",substring);
++    }
++
++    public void openList(String name) {
++        this.waitForElementPresentAndClick(By.xpath(getListElement(name)),"no list with selected name", 5);
++    }
++}
+diff --git a/src/lib/ui/SearchPageObject.java b/src/lib/ui/SearchPageObject.java
+new file mode 100644
+index 0000000..58d6b98
+--- /dev/null
++++ b/src/lib/ui/SearchPageObject.java
+@@ -0,0 +1,87 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++
++import java.util.List;
++
++public class SearchPageObject extends MainPageObject {
++
++    private static final String
++        SEARCH_INPUT_ELEMENT = "//*[contains(@text,'Search Wikipedia')]",
++        SEARCH_INPUT = "//*[contains(@text,'Search…')]",
++        SEARCH_RESULT_TPL = "//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='(SUBSTRING)']",
++        SEARCH_RESULTS_ITEMS = "//*[@resource-id='org.wikipedia:id/page_list_item_title']",
++        SEARCH_CANCEL_BUTTON = "org.wikipedia:id/search_close_btn",
++        NAVIGATE_MY_LISTS = "//android.widget.FrameLayout[@content-desc='My lists']",
++        SEARCH_RESULT_DOUBLE_TPL = "//*[android.widget.TextView[@index=0 and @text='(SUBSTRING_1)'] and android.widget.TextView[@index=1 and @text='(SUBSTRING_2)']]";
++
++
++
++
++    public SearchPageObject(AppiumDriver driver){
++        super(driver);
++    }
++
++    private static String getSearchResultElement(String substring) {
++        return  SEARCH_RESULT_TPL.replace("(SUBSTRING)",substring);
++    }
++
++    private static String getSearchResultElementByTwoConditions(String substring_1, String substring_2) {
++        return  SEARCH_RESULT_DOUBLE_TPL.replace("(SUBSTRING_1)",substring_1).replace("(SUBSTRING_2)",substring_2);
++    }
++
++    public void initSearchInput() {
++        this.waitForElementPresentAndClick(By.xpath(SEARCH_INPUT_ELEMENT),
++                "Can't find and search element", 5);
++        this.waitForElementPresent(By.xpath(SEARCH_INPUT_ELEMENT),
++                "Can't find search after click", 5);
++    }
++
++    public void waitForCancelButtonToAppear(){
++        this.waitForElementPresent(By.id(SEARCH_CANCEL_BUTTON), "no cancel button", 5);
++    }
++
++    public void waitForCancelButtonToDisaappear(){
++        this.waitForElementNotPresent(By.id(SEARCH_CANCEL_BUTTON), "no cancel button", 5);
++    }
++
++    public void clickCancelSearch() {
++        this.waitForElementPresentAndClick(By.id(SEARCH_CANCEL_BUTTON), "no cacncel button", 5);
++    }
++
++    public void typeSearchText(String search_line) {
++        this.waitForElementPresentAndSendKeys(By.xpath(SEARCH_INPUT), search_line,"can't type into search input",5);
++    }
++
++    public void waitForSearchResult(String search_string) {
++        this.waitForElementPresent(By.xpath(getSearchResultElement(search_string)), "there are no search results", 5);
++    }
++
++    public List<WebElement> waitForSearchResults(String search_string) {
++       return this.waitForElementsPresent(By.xpath(getSearchResultElement(search_string)), "there are no search results", 5);
++    }
++
++    public void clickByArticleWithSubstring(String substring) {
++        this.waitForElementPresentAndClick(By.xpath(getSearchResultElement(substring)), "there are no search results", 5);
++    }
++
++    public boolean isSearchEmpty(String substring) {
++        return this.waitForElementNotPresent(By.xpath(getSearchResultElement(substring)), "there are search results", 5 );
++    }
++
++    public void goToMyLists() {
++        this.waitForElementPresentAndClick(By.xpath(NAVIGATE_MY_LISTS), "no my lists menu",5);
++    }
++
++    public WebElement waitForElementByTitleAndDescription(String title, String description) {
++        return this.waitForElementPresent(By.xpath(getSearchResultElementByTwoConditions(title,description)), "results do not contain both correct parameters title and description" + title + description  , 10);
++    }
++
++    public  List<WebElement> getSearchResultsList() {
++
++        return this.waitForElementsPresent(By.xpath(SEARCH_RESULTS_ITEMS), "no search results", 5);
++
++    }
++}
+\ No newline at end of file
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+new file mode 100644
+index 0000000..e96534f
+--- /dev/null
++++ b/.idea/uiDesigner.xml
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+index 1cf472e..69f393d 100644
+--- a/.idea/workspace.xml
++++ b/.idea/workspace.xml
+@@ -1,7 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="23f27529-d0c1-4ab0-8825-0247ddfb318e" name="Default Changelist" comment="" />
++    <list default="true" id="23f27529-d0c1-4ab0-8825-0247ddfb318e" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/src/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchTests.java" afterDir="false" />
++    </list>
+     <ignored path="$PROJECT_DIR$/out/" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -13,51 +15,161 @@
+     <session id="207525332">
+       <usages-collector id="statistics.lifecycle.project">
+         <counts>
++          <entry key="project.closed" value="10" />
++          <entry key="project.open.time.1" value="2" />
++          <entry key="project.open.time.11" value="1" />
+           <entry key="project.open.time.2" value="1" />
+-          <entry key="project.opened" value="1" />
++          <entry key="project.open.time.5" value="5" />
++          <entry key="project.open.time.6" value="2" />
++          <entry key="project.opened" value="11" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.extensions.open">
+         <counts>
++          <entry key="class" value="6" />
+           <entry key="iml" value="1" />
+-          <entry key="java" value="1" />
++          <entry key="java" value="11" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.types.open">
+         <counts>
++          <entry key="CLASS" value="6" />
+           <entry key="IDEA_MODULE" value="1" />
+-          <entry key="JAVA" value="1" />
++          <entry key="JAVA" value="11" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.extensions.edit">
+         <counts>
+-          <entry key="java" value="466" />
++          <entry key="dummy" value="12" />
++          <entry key="java" value="13681" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.types.edit">
+         <counts>
+-          <entry key="JAVA" value="466" />
++          <entry key="JAVA" value="13681" />
++          <entry key="PLAIN_TEXT" value="12" />
+         </counts>
+       </usages-collector>
+     </session>
+   </component>
+   <component name="FileEditorManager">
+-    <leaf>
++    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/JavaAppiumAutomation.iml">
+-          <provider selected="true" editor-type-id="text-editor" />
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="195">
++              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/ArticleTests.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="124">
++              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++            </state>
++          </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
++        <entry file="file://$PROJECT_DIR$/src/SearchTests.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-135">
+-              <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
++            <state relative-caret-position="525">
++              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+               <folding>
+-                <element signature="e#1037#1038#0" expanded="true" />
+-                <element signature="e#1062#1063#0" expanded="true" />
+-                <element signature="e#1096#1097#0" expanded="true" />
+-                <element signature="e#1125#1126#0" expanded="true" />
++                <element signature="imports" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/ListDetailsPageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="105">
++              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#157#158#0" expanded="true" />
++                <element signature="e#186#187#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="300">
++              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#148#149#0" expanded="true" />
++                <element signature="e#177#178#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="1179">
++              <caret line="81" column="49" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="49" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#2300#2301#0" expanded="true" />
++                <element signature="e#2401#2402#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="331">
++              <caret line="84" column="41" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="41" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#452#453#0" expanded="true" />
++                <element signature="e#481#482#0" expanded="true" />
++                <element signature="e#657#658#0" expanded="true" />
++                <element signature="e#721#722#0" expanded="true" />
++                <element signature="e#756#757#0" expanded="true" />
++                <element signature="e#840#841#0" expanded="true" />
++                <element signature="e#2235#2236#0" expanded="true" />
++                <element signature="e#2286#2287#0" expanded="true" />
++                <element signature="e#3135#3136#0" expanded="true" />
++                <element signature="e#3170#3171#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="272">
++              <caret line="144" column="40" lean-forward="true" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="40" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="255">
++              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
++              <folding>
++                <element signature="imports" expanded="true" />
+               </folding>
+             </state>
+           </provider>
+@@ -72,24 +184,50 @@
+       </list>
+     </option>
+   </component>
++  <component name="FindInProjectRecents">
++    <findStrings>
++      <find>btn</find>
++      <find>title</find>
++      <find>asse</find>
++      <find>//*[@resource-id='org.wikipedia:id/page_list_item_title']</find>
++    </findStrings>
++    <replaceStrings>
++      <replace />
++    </replaceStrings>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
++        <option value="$PROJECT_DIR$/src/lib/CoreTestCase.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/ListDetailsPageObject.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" />
+         <option value="$PROJECT_DIR$/src/FirstTest.java" />
++        <option value="$PROJECT_DIR$/src/ArticleTests.java" />
++        <option value="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" />
++        <option value="$PROJECT_DIR$/src/SearchTests.java" />
+       </list>
+     </option>
+   </component>
+   <component name="ProjectFrameBounds">
++    <option name="x" value="372" />
+     <option name="y" value="22" />
+-    <option name="width" value="1440" />
++    <option name="width" value="1068" />
+     <option name="height" value="878" />
+   </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectView">
+     <navigator proportions="" version="1">
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
+       <pane id="AndroidView" />
++      <pane id="Scope" />
++      <pane id="PackagesPane" />
+       <pane id="ProjectPane">
+         <subPane>
+           <expand>
+@@ -114,21 +252,33 @@
+             </path>
+             <path>
+               <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
++              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
++              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="lib" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
++              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="lib" type="462c0819:PsiDirectoryNode" />
++              <item name="ui" type="462c0819:PsiDirectoryNode" />
+             </path>
+           </expand>
+           <select />
+         </subPane>
+       </pane>
+-      <pane id="PackagesPane" />
+-      <pane id="Scope" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536611175130" />
+-    <property name="project.structure.last.edited" value="Libraries" />
+-    <property name="project.structure.proportion" value="0.0" />
+-    <property name="project.structure.side.proportion" value="0.0" />
++    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538696284423" />
++    <property name="project.structure.last.edited" value="SDKs" />
++    <property name="project.structure.proportion" value="0.15" />
++    <property name="project.structure.side.proportion" value="0.2" />
+   </component>
+   <component name="RunDashboard">
+     <option name="ruleStates">
+@@ -142,33 +292,78 @@
+       </list>
+     </option>
+   </component>
+-  <component name="RunManager" selected="JUnit.FirstTest.firstTest">
+-    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="JUnit.SearchTests">
++    <configuration name="ArticleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="JavaAppiumAutomation" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ArticleTests.checkSearchlaceholderText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="JavaAppiumAutomation" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <option name="METHOD_NAME" value="checkSearchlaceholderText" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ArticleTests.testArticleMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="JavaAppiumAutomation" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <option name="METHOD_NAME" value="testArticleMatch" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ArticleTests.testSearchCancel" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+       <module name="JavaAppiumAutomation" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <option name="METHOD_NAME" value="testSearchCancel" />
++      <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="FirstTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="ArticleTests.testSearchResultWithText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="JavaAppiumAutomation" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+-      <option name="METHOD_NAME" value="firstTest" />
++      <option name="MAIN_CLASS_NAME" value="ArticleTests" />
++      <option name="METHOD_NAME" value="testSearchResultWithText" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="SearchTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="JavaAppiumAutomation" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="SearchTests" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <list>
+-      <item itemvalue="JUnit.FirstTest" />
+-      <item itemvalue="JUnit.FirstTest.firstTest" />
++      <item itemvalue="JUnit.ArticleTests.testSearchCancel" />
++      <item itemvalue="JUnit.ArticleTests" />
++      <item itemvalue="JUnit.ArticleTests.testArticleMatch" />
++      <item itemvalue="JUnit.ArticleTests.checkSearchlaceholderText" />
++      <item itemvalue="JUnit.ArticleTests.testSearchResultWithText" />
++      <item itemvalue="JUnit.SearchTests" />
+     </list>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="JUnit.FirstTest.firstTest" />
+-        <item itemvalue="JUnit.FirstTest" />
++        <item itemvalue="JUnit.SearchTests" />
++        <item itemvalue="JUnit.ArticleTests" />
++        <item itemvalue="JUnit.ArticleTests.testSearchResultWithText" />
++        <item itemvalue="JUnit.ArticleTests.checkSearchlaceholderText" />
++        <item itemvalue="JUnit.ArticleTests.testArticleMatch" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -183,76 +378,277 @@
+     <servers />
+   </component>
+   <component name="TestHistory">
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 10m 35s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 12m 10s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
++    </history-entry>
++    <history-entry file="SearchTests - 2018.10.05 at 02h 19m 56s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
++    </history-entry>
++    <history-entry file="SearchTests - 2018.10.05 at 02h 29m 56s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 11m 59s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 30m 20s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 13m 40s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 31m 48s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 14m 05s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 32m 24s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 16m 36s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 32m 49s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest - 2018.09.10 at 23h 17m 23s.xml">
+-      <configuration name="FirstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 33m 15s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+-    <history-entry file="FirstTest_firstTest - 2018.09.10 at 23h 18m 24s.xml">
+-      <configuration name="FirstTest.firstTest" configurationId="JUnit" />
++    <history-entry file="SearchTests - 2018.10.05 at 02h 34m 08s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
++    </history-entry>
++    <history-entry file="SearchTests - 2018.10.05 at 02h 34m 35s.xml">
++      <configuration name="SearchTests" configurationId="JUnit" />
+     </history-entry>
+   </component>
+   <component name="ToolWindowManager">
+-    <frame x="0" y="22" width="1440" height="878" extended-state="0" />
++    <frame x="372" y="22" width="1068" height="878" extended-state="0" />
+     <editor active="true" />
+     <layout>
+-      <window_info id="Image Layers" />
+-      <window_info id="Designer" />
+-      <window_info id="UI Designer" />
+-      <window_info id="Capture Tool" />
+-      <window_info id="Favorites" side_tool="true" />
+-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
++      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2631579" />
+       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+-      <window_info anchor="bottom" id="Terminal" />
+-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+-      <window_info anchor="bottom" id="Messages" />
++      <window_info id="Image Layers" order="2" />
++      <window_info id="Designer" order="3" />
++      <window_info id="UI Designer" order="4" />
++      <window_info id="Capture Tool" order="5" />
++      <window_info id="Favorites" order="6" side_tool="true" />
+       <window_info anchor="bottom" id="Message" order="0" />
+       <window_info anchor="bottom" id="Find" order="1" />
+-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32951653" />
+-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32824427" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.3778626" />
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+       <window_info anchor="bottom" id="TODO" order="6" />
+-      <window_info anchor="right" id="Palette" />
+-      <window_info anchor="right" id="Theme Preview" />
+-      <window_info anchor="right" id="Capture Analysis" />
+-      <window_info anchor="right" id="Palette&#9;" />
+-      <window_info anchor="right" id="Maven Projects" />
++      <window_info anchor="bottom" id="Terminal" order="7" />
++      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
++      <window_info anchor="bottom" id="Version Control" order="9" />
++      <window_info anchor="bottom" id="Messages" order="10" weight="0.32951653" />
+       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++      <window_info anchor="right" id="Palette" order="3" />
++      <window_info anchor="right" id="Capture Analysis" order="4" />
++      <window_info anchor="right" id="Theme Preview" order="5" />
++      <window_info anchor="right" id="Palette&#9;" order="6" />
++      <window_info anchor="right" id="Maven Projects" order="7" />
+     </layout>
++    <layout-to-restore>
++      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
++      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
++      <window_info id="Image Layers" order="2" />
++      <window_info id="Designer" order="3" />
++      <window_info id="UI Designer" order="4" />
++      <window_info id="Capture Tool" order="5" />
++      <window_info id="Favorites" order="6" side_tool="true" />
++      <window_info anchor="bottom" id="Message" order="0" />
++      <window_info anchor="bottom" id="Find" order="1" />
++      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32951653" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
++      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
++      <window_info anchor="bottom" id="TODO" order="6" />
++      <window_info anchor="bottom" id="Terminal" order="7" />
++      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
++      <window_info anchor="bottom" id="Version Control" order="9" />
++      <window_info anchor="bottom" id="Messages" order="10" />
++      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
++      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
++      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++      <window_info anchor="right" id="Palette" order="3" />
++      <window_info anchor="right" id="Capture Analysis" order="4" />
++      <window_info anchor="right" id="Theme Preview" order="5" />
++      <window_info anchor="right" id="Palette&#9;" order="6" />
++      <window_info anchor="right" id="Maven Projects" order="7" />
++    </layout-to-restore>
+   </component>
+   <component name="VcsContentAnnotationSettings">
+     <option name="myLimit" value="2678400000" />
+   </component>
++  <component name="debuggerHistoryManager">
++    <expressions id="evaluateExpression">
++      <expression>
++        <expression-string>target_results.get(0).getText()</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.size()</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>first_result.getText()</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(2).equals(first_result)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(1).equals(first_result)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(0).equals(first_result)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(0).getAttribute(&quot;)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(0).getAttribute(&quot;size&quot;)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++      <expression>
++        <expression-string>target_results.get(0).getAttribute(&quot;value&quot;)</expression-string>
++        <language-id>JAVA</language-id>
++        <evaluation-mode>EXPRESSION</evaluation-mode>
++      </expression>
++    </expressions>
++  </component>
+   <component name="editorHistoryManager">
++    <entry file="jar://$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="21">
++          <caret line="114" column="48" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="jar://$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/org/openqa/selenium/support/ui/WebDriverWait.class">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="213">
++          <caret line="34" selection-start-line="34" selection-end-line="34" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Object.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="464">
++          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="jar://$PROJECT_DIR$/libs/junit-4.10.jar!/org/junit/Assert.class">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="90">
++          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
++        </state>
++      </provider>
++    </entry>
+     <entry file="file://$PROJECT_DIR$/JavaAppiumAutomation.iml">
+-      <provider selected="true" editor-type-id="text-editor" />
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="195">
++          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="255">
++          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="331">
++          <caret line="84" column="41" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="41" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="e#452#453#0" expanded="true" />
++            <element signature="e#481#482#0" expanded="true" />
++            <element signature="e#657#658#0" expanded="true" />
++            <element signature="e#721#722#0" expanded="true" />
++            <element signature="e#756#757#0" expanded="true" />
++            <element signature="e#840#841#0" expanded="true" />
++            <element signature="e#2235#2236#0" expanded="true" />
++            <element signature="e#2286#2287#0" expanded="true" />
++            <element signature="e#3135#3136#0" expanded="true" />
++            <element signature="e#3170#3171#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/ArticleTests.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="124">
++          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="272">
++          <caret line="144" column="40" lean-forward="true" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="40" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="300">
++          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="e#148#149#0" expanded="true" />
++            <element signature="e#177#178#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/ListDetailsPageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="105">
++          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="e#157#158#0" expanded="true" />
++            <element signature="e#186#187#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="1179">
++          <caret line="81" column="49" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="49" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="e#2300#2301#0" expanded="true" />
++            <element signature="e#2401#2402#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
++    <entry file="file://$PROJECT_DIR$/src/SearchTests.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-135">
+-          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
++        <state relative-caret-position="525">
++          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+           <folding>
+-            <element signature="e#1037#1038#0" expanded="true" />
+-            <element signature="e#1062#1063#0" expanded="true" />
+-            <element signature="e#1096#1097#0" expanded="true" />
+-            <element signature="e#1125#1126#0" expanded="true" />
++            <element signature="imports" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+@@ -322,7 +718,7 @@
+       </state>
+       <state key="ProjectLibrariesConfigurable.UI">
+         <settings>
+-          <last-edited>selenium-server-standalone-3.4.0</last-edited>
++          <last-edited>java-client-4.1.2</last-edited>
+           <splitter-proportions>
+             <option name="proportions">
+               <list>
+diff --git a/src/ArticleTests.java b/src/ArticleTests.java
+new file mode 100644
+index 0000000..96a8201
+--- /dev/null
++++ b/src/ArticleTests.java
+@@ -0,0 +1,63 @@
++import lib.CoreTestCase;
++
++import lib.ui.ArticlePageObject;
++import lib.ui.ListDetailsPageObject;
++import lib.ui.MyListsPageObject;
++import lib.ui.SearchPageObject;
++import org.junit.Test;
++
++
++
++public class ArticleTests extends CoreTestCase {
++
++    protected void setUp() throws Exception {
++        super.setUp();
++    }
++
++    @Test
++    public void testAddTwoArticles() throws InterruptedException {
++        String[] words = {
++                "Java (programming language)",
++                "Ruby (programming language)"
++        };
++
++        String myList = "OOP";
++
++        SearchPageObject searchPageObject = new SearchPageObject(driver);
++
++        searchPageObject.initSearchInput();
++        searchPageObject.typeSearchText(words[0]);
++        searchPageObject.waitForSearchResult(words[0]);
++        searchPageObject.clickByArticleWithSubstring(words[0]);
++
++        ArticlePageObject articlePageObject = new ArticlePageObject(driver);
++
++        articlePageObject.waitForTitleElemet();
++        articlePageObject.addArticleToMyNewList(myList);
++        articlePageObject.returnToSearch();
++
++        searchPageObject.initSearchInput();
++        searchPageObject.typeSearchText(words[1]);
++        searchPageObject.waitForSearchResult(words[1]);
++        searchPageObject.clickByArticleWithSubstring(words[1]);
++
++        articlePageObject.waitForTitleElemet();
++        articlePageObject.addArticleToExistingList(myList);
++        articlePageObject.returnToSearch();
++
++        searchPageObject.goToMyLists();
++        Thread.sleep(1000);
++        MyListsPageObject myListsPageObject = new MyListsPageObject(driver);
++        myListsPageObject.openList(myList);
++
++        ListDetailsPageObject listDetailsPageObject = new ListDetailsPageObject(driver);
++        listDetailsPageObject.deleteArticle(words[1]);
++
++        assertFalse(listDetailsPageObject.isArticlePresent(words[1]));
++
++        listDetailsPageObject.openArticle(words[0]);
++        articlePageObject.assertArticleTitleIs(words[0]);
++    }
++
++
++}
+diff --git a/src/FirstTest.java b/src/FirstTest.java
+deleted file mode 100644
+index 90a3a0f..0000000
+--- a/src/FirstTest.java
++++ /dev/null
+@@ -1,119 +0,0 @@
+-import io.appium.java_client.AppiumDriver;
+-import io.appium.java_client.android.AndroidDriver;
+-import org.junit.After;
+-import org.junit.Assert;
+-import org.junit.Before;
+-import org.junit.Test;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.remote.DesiredCapabilities;
+-import org.openqa.selenium.support.ui.ExpectedConditions;
+-import org.openqa.selenium.support.ui.WebDriverWait;
+-
+-import java.net.URL;
+-import java.util.List;
+-
+-public class FirstTest {
+-    private AppiumDriver driver;
+-
+-    @Before
+-    public void setUp() throws Exception {
+-        DesiredCapabilities capabilities = new DesiredCapabilities();
+-
+-        capabilities.setCapability("platformName","Android");
+-        capabilities.setCapability("deviceName","AndroidTestDevice");
+-        capabilities.setCapability("platformVersion","6.0");
+-        capabilities.setCapability("automationName","Appium");
+-        capabilities.setCapability("appPackage","org.wikipedia");
+-        capabilities.setCapability("appActivity",".main.MainActivity");
+-        capabilities.setCapability("app","/Users/evgenydylevsky/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
+-
+-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+-    }
+-
+-    @After
+-    public void tearDown() {
+-        driver.quit();
+-    }
+-
+-    @Test
+-    public void testSearchResultWithText() {
+-        waitForElementPresentAndClick(By.id("org.wikipedia:id/search_container"),
+-                "No search field element with current id",
+-                5);
+-
+-        waitForElementPresentAndSendKeys(By.xpath("//*[contains(@text, 'Search…')]"),
+-                "Java",
+-                "No search field placeholder text",
+-                5);
+-
+-        List<WebElement> searchResultsTitles = waitForElementsPresent(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@resource-id='org.wikipedia:id/page_list_item_title']"),
+-                "Not found elements in search results",
+-                15);
+-
+-        Assert.assertTrue("Not all results have target text", checkAllResultsContainsText(searchResultsTitles, "Java"));
+-    }
+-
+-    private List<WebElement> waitForElementsPresent(By by, String error_message, long timeoutValue) {
+-        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
+-        wait.withMessage(error_message);
+-
+-        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
+-    }
+-
+-    private Boolean checkAllResultsContainsText(List<WebElement> searchResults, String text) {
+-        Boolean result = true;
+-
+-        for(int i=0; i<searchResults.size(); i++) {
+-            if(!searchResults.get(i).getText().contains(text)){
+-                result = false;
+-                break;
+-            }
+-            else continue;
+-        }
+-
+-        return result;
+-    }
+-
+-    private WebElement waitForElementPresent(By by, String error_message, long timeoutValue) {
+-        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
+-        wait.withMessage(error_message);
+-
+-        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
+-    }
+-
+-    private WebElement waitForElementPresent(By by, String error_message) {
+-        WebDriverWait wait = new WebDriverWait(driver, 5);
+-        wait.withMessage(error_message);
+-
+-        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
+-    }
+-
+-    private WebElement waitForElementPresentAndClick(By by, String error_message, long timeoutValue) {
+-        WebElement element = waitForElementPresent(by , error_message, timeoutValue);
+-        element.click();
+-
+-        return element;
+-    }
+-
+-    private WebElement waitForElementPresentAndSendKeys(By by, String value, String error_message, long timeoutValue) {
+-        WebElement element = waitForElementPresent(by, error_message, timeoutValue);
+-        element.sendKeys(value);
+-
+-        return element;
+-    }
+-
+-    private boolean waitForElementNotPresent(By by, String  error_message, long timeoutValue) {
+-        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
+-        wait.withMessage(error_message);
+-
+-        return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+-    }
+-
+-    private WebElement waitForElementAndClear(By by, String error_message, long timeoutValue) {
+-        WebElement element = waitForElementPresent(by, error_message, timeoutValue);
+-        element.clear();
+-
+-        return element;
+-    }
+-}
+\ No newline at end of file
+diff --git a/src/SearchTests.java b/src/SearchTests.java
+new file mode 100644
+index 0000000..c468251
+--- /dev/null
++++ b/src/SearchTests.java
+@@ -0,0 +1,69 @@
++import lib.CoreTestCase;
++import lib.ui.ArticlePageObject;
++import lib.ui.SearchPageObject;
++import org.junit.Test;
++import org.openqa.selenium.WebElement;
++
++import java.util.List;
++
++public class SearchTests extends CoreTestCase {
++
++    protected void setUp() throws Exception {
++        super.setUp();
++    }
++
++    @Test
++    public void testCancelSearch() {
++        String search_word = "Java";
++
++        SearchPageObject searchPageObject = new SearchPageObject(driver);
++
++        searchPageObject.initSearchInput();
++        searchPageObject.typeSearchText(search_word);
++        searchPageObject.waitForSearchResult("Java");
++        searchPageObject.clickCancelSearch();
++
++        assertTrue(searchPageObject.isSearchEmpty(search_word));
++    }
++
++    @Test
++    public void testCheckArticleTitle()  {
++        String[] words = {
++                "Java (programming language)",
++                "Ruby (programming language)"
++        };
++
++        SearchPageObject searchPageObject = new SearchPageObject(driver);
++
++        searchPageObject.initSearchInput();
++        searchPageObject.typeSearchText(words[0]);
++        searchPageObject.waitForSearchResult(words[0]);
++        searchPageObject.clickByArticleWithSubstring(words[0]);
++
++        ArticlePageObject articlePageObject = new ArticlePageObject(driver);
++        assertTrue(articlePageObject.assertTitleIsPresent());
++    }
++
++
++    @Test
++    public void testMultipleConditionsSearch() throws Exception {
++        String[] correctResult_1 = {
++                "Java",
++                "Island of Indonesia"
++        };
++
++        SearchPageObject searchPageObject = new SearchPageObject(driver);
++
++        searchPageObject.initSearchInput();
++        searchPageObject.typeSearchText(correctResult_1[0]);
++        List<WebElement> target_results = searchPageObject.getSearchResultsList();
++
++        searchPageObject.waitForElementByTitleAndDescription(correctResult_1[0], correctResult_1[1]);
++
++        for(int i=0; i<3; i++) {
++            assertTrue("element "  + i + " is not correct search result", target_results.get(i).getText().equals(correctResult_1[0]));
++        }
++
++    }
++
++}
+diff --git a/src/lib/CoreTestCase.java b/src/lib/CoreTestCase.java
+new file mode 100644
+index 0000000..20d56a2
+--- /dev/null
++++ b/src/lib/CoreTestCase.java
+@@ -0,0 +1,43 @@
++package lib;
++
++import io.appium.java_client.AppiumDriver;
++import io.appium.java_client.android.AndroidDriver;
++import junit.framework.TestCase;
++import org.junit.After;
++import org.junit.Before;
++import org.openqa.selenium.remote.DesiredCapabilities;
++
++import java.net.URL;
++
++public class CoreTestCase extends TestCase {
++
++    protected AppiumDriver driver;
++    private static String AppiumUrl = "http://127.0.0.1:4723/wd/hub";
++
++    @Before
++    protected void setUp() throws Exception {
++        super.setUp();
++
++        DesiredCapabilities capabilities = new DesiredCapabilities();
++
++        capabilities.setCapability("platformName","Android");
++        capabilities.setCapability("deviceName","AndroidTestDevice");
++        capabilities.setCapability("platformVersion","6.0");
++        capabilities.setCapability("automationName","Appium");
++        capabilities.setCapability("appPackage","org.wikipedia");
++        capabilities.setCapability("appActivity",".main.MainActivity");
++        capabilities.setCapability("orientation", "PORTRAIT"); //РЕШЕНИЕ ПРОБЛЕМЫ С  ОРИЕНТАЦИЕЙ
++        capabilities.setCapability("app","/Users/evgenydylevsky/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
++
++        driver = new AndroidDriver(new URL(AppiumUrl), capabilities);
++    }
++
++    @After
++    public void tearDown() throws Exception {
++        super.tearDown();
++
++        driver.quit();
++    }
++
++
++}
+diff --git a/src/lib/ui/ArticlePageObject.java b/src/lib/ui/ArticlePageObject.java
+new file mode 100644
+index 0000000..3a6dd5a
+--- /dev/null
++++ b/src/lib/ui/ArticlePageObject.java
+@@ -0,0 +1,88 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++
++public class ArticlePageObject extends MainPageObject {
++
++    private static final String
++        TITLE_ID = "org.wikipedia:id/view_page_title_text",
++        FOOTER_ELEMENT = "//*[@text='View page in browser']",
++        MORE_OPTIONS_MENU = "//android.widget.ImageView[@content-desc='More options']",
++        ADD_TO_READING_LIST_OPTION = "//*[@text='Add to reading list']",
++        ONBOARDING_BUTTON = "org.wikipedia:id/onboarding_button",
++        DIRECTORY_NAME_INPUT = "org.wikipedia:id/text_input",
++        OK_BUTTON = "//*[@text='OK']",
++        RETURN_BUTTON = "//android.widget.ImageButton[@content-desc='Navigate up']",
++        EXISTED_LIST_TPL = "//*[@class='android.widget.LinearLayout']//*[@text='(SUBSTRING)']";
++
++
++
++
++    public ArticlePageObject(AppiumDriver driver){
++        super(driver);
++    }
++
++    public WebElement waitForTitleElemet() {
++        return this.waitForElementPresent(By.id(TITLE_ID), "no title of article",5);
++    }
++
++    public String getArticleTitle() {
++        return waitForTitleElemet().getAttribute("text");
++    }
++
++    public void swipeToFooter() {
++        this.swipeUpToFindElement(By.xpath(FOOTER_ELEMENT), "no footer", 20);
++    }
++
++
++    public void openMoreOptions() throws InterruptedException {
++        this.waitForElementPresentAndClick(By.xpath(MORE_OPTIONS_MENU), "There is no more option menu", 5);
++        Thread.sleep(1000);
++    }
++
++    public void clickAddToReadingListOption() {
++        this.waitForElementPresentAndClick(By.xpath(ADD_TO_READING_LIST_OPTION), "there is no option", 5);
++    }
++
++    public void closeOnboarding() {
++        this.waitForElementPresentAndClick(By.id(ONBOARDING_BUTTON), "there is no onboarding button", 5);
++    }
++
++    public void enterListName(String name) {
++        this.waitForElementAndClear(By.id(DIRECTORY_NAME_INPUT),"there is no name input for clear", 5);
++        this.waitForElementPresentAndSendKeys(By.id(DIRECTORY_NAME_INPUT), name,"there is no name input", 5);
++        this.waitForElementPresentAndClick(By.xpath(OK_BUTTON), "there is no confrim name button", 5);
++    }
++
++    public void addArticleToMyNewList(String listName) throws InterruptedException {
++        openMoreOptions();
++        clickAddToReadingListOption();
++        closeOnboarding();
++        enterListName(listName);
++    }
++
++    public void addArticleToExistingList(String name) throws InterruptedException{
++        openMoreOptions();
++        clickAddToReadingListOption();
++        this.waitForElementPresentAndClick(By.xpath(getExistingListElement(name)), "no list",5);
++    }
++
++    public void returnToSearch() {
++        this.waitForElementPresentAndClick(By.xpath(RETURN_BUTTON), "no return button", 5);
++    }
++
++    private static String getExistingListElement(String substring) {
++        return  EXISTED_LIST_TPL.replace("(SUBSTRING)",substring);
++    }
++
++    public boolean assertArticleTitleIs(String name) {
++        String articleTitle = this.getArticleTitle();
++        return articleTitle.equals(name);
++    }
++
++    public boolean assertTitleIsPresent() {
++        return assertElementPresent(By.id(TITLE_ID));
++    }
++}
+diff --git a/src/lib/ui/ListDetailsPageObject.java b/src/lib/ui/ListDetailsPageObject.java
+new file mode 100644
+index 0000000..9554d87
+--- /dev/null
++++ b/src/lib/ui/ListDetailsPageObject.java
+@@ -0,0 +1,33 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import org.openqa.selenium.By;
++
++public class ListDetailsPageObject extends MainPageObject {
++
++    private static final String
++        ARTICLE_ELEMENT_TPL = "//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='(SUBSTRING)']";
++
++
++    public ListDetailsPageObject(AppiumDriver driver){
++        super(driver);
++    }
++
++
++    private static String getArticleElement(String substring) {
++        return  ARTICLE_ELEMENT_TPL.replace("(SUBSTRING)",substring);
++    }
++
++    public void deleteArticle(String name) {
++        this.swipeElemendToLeft(By.xpath(getArticleElement(name)), "no selected article");
++    }
++
++    public void openArticle(String name) {
++        this.waitForElementPresentAndClick(By.xpath(getArticleElement(name)), "no selected article",5);
++    }
++
++    public boolean isArticlePresent(String name) {
++       return !this.waitForElementNotPresent(By.xpath(getArticleElement(name)), "article present",5);
++    }
++
++}
+diff --git a/src/lib/ui/MainPageObject.java b/src/lib/ui/MainPageObject.java
+new file mode 100644
+index 0000000..471a522
+--- /dev/null
++++ b/src/lib/ui/MainPageObject.java
+@@ -0,0 +1,151 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import io.appium.java_client.TouchAction;
++import org.openqa.selenium.By;
++import org.openqa.selenium.Dimension;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.support.ui.ExpectedConditions;
++import org.openqa.selenium.support.ui.WebDriverWait;
++
++import java.util.List;
++
++public class MainPageObject {
++    protected AppiumDriver driver;
++
++    public MainPageObject(AppiumDriver driver) {
++        this.driver = driver;
++    }
++
++
++    public int getAmountOfSearchElements(By by ) {
++
++        List elements = driver.findElements(by);
++        return elements.size();
++    }
++
++    public boolean assertElementPresent(By by) {
++        Boolean result = !driver.findElements(by).isEmpty();
++
++        return result;
++    }
++
++    public WebElement waitForElementPresent(By by, String error_message, long timeoutValue) {
++        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
++        wait.withMessage(error_message);
++
++        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
++    }
++
++    public WebElement waitForElementPresent(By by, String error_message) {
++        WebDriverWait wait = new WebDriverWait(driver, 5);
++        wait.withMessage(error_message);
++
++        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
++    }
++
++    public WebElement waitForElementPresentAndClick(By by, String error_message, long timeoutValue) {
++        WebElement element = waitForElementPresent(by , error_message, timeoutValue);
++        element.click();
++
++        return element;
++    }
++
++    public WebElement waitForElementPresentAndSendKeys(By by, String value, String error_message, long timeoutValue) {
++        WebElement element = waitForElementPresent(by, error_message, timeoutValue);
++        element.sendKeys(value);
++
++        return element;
++    }
++
++    public boolean waitForElementNotPresent(By by, String  error_message, long timeoutValue) {
++        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
++        wait.withMessage(error_message);
++
++        return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
++    }
++
++    public WebElement waitForElementAndClear(By by, String error_message, long timeoutValue) {
++        WebElement element = waitForElementPresent(by, error_message, timeoutValue);
++        element.clear();
++
++        return element;
++    }
++
++    //Метод для проверки наличия плейсходера в поле поиска
++    public Boolean waitIsPlaceholderSearchPresent(String error_message, long timeoutValue) {
++        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
++        wait.withMessage(error_message);
++        By by = (By.id("org.wikipedia:id/search_src_text"));
++
++        return wait.until(ExpectedConditions.attributeContains(by,"text", "Search…"));
++    }
++
++    public void swipeUp(int timeOfSwipe) {
++        TouchAction action = new TouchAction(driver);
++        Dimension size = driver.manage().window().getSize();
++        int x = size.width/2;
++        int start_y = (int) (size.height * 0.8);
++        int end_y = (int) (size.height * 0.2);
++
++        action
++                .press(x, start_y)
++                .waitAction(timeOfSwipe)
++                .moveTo(x, end_y)
++                .release()
++                .perform();
++    }
++
++    public void swipeUpQuick() {
++        swipeUp(200);
++    }
++
++    public void swipeUpToFindElement(By by, String error_message, int max_swipes){
++        int already_swiped = 0;
++        while(driver.findElements(by).size() == 0) {
++
++            if(already_swiped > max_swipes) {
++                waitForElementPresent(by, "cannot find via swipe" + error_message, 5);
++                return;
++            }
++
++            swipeUpQuick();
++            ++already_swiped;
++        }
++    }
++    protected void swipeElemendToLeft(By by, String error_message) {
++        WebElement element = waitForElementPresent(by, error_message, 10);
++
++        int left_x = element.getLocation().getX();
++        int right_x = left_x + element.getSize().getWidth();
++        int upper_y = element.getLocation().getY();
++        int lower_y = upper_y + element.getSize().getHeight();
++        int middle_y = (upper_y + lower_y)/2;
++
++        TouchAction action = new TouchAction(driver);
++        action
++                .press(right_x, middle_y)
++                .waitAction()
++                .waitAction(150)
++                .moveTo(left_x,middle_y)
++                .release()
++                .perform();
++    }
++
++    public String getAttributeValueOfElement(By by, String attribute) {
++        WebElement element = waitForElementPresent(by, "Can't parse attribute");
++        String attributeValue = element.getAttribute(attribute);
++
++        return attributeValue;
++    }
++
++
++    public List<WebElement> waitForElementsPresent(By by, String error_message, long timeoutValue) {
++        WebDriverWait wait = new WebDriverWait(driver, timeoutValue);
++        wait.withMessage(error_message);
++
++        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
++    }
++
++
++}
+diff --git a/src/lib/ui/MyListsPageObject.java b/src/lib/ui/MyListsPageObject.java
+new file mode 100644
+index 0000000..93fdfa9
+--- /dev/null
++++ b/src/lib/ui/MyListsPageObject.java
+@@ -0,0 +1,22 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import org.openqa.selenium.By;
++
++public class MyListsPageObject extends MainPageObject {
++
++    private static final String
++        LIST_ELEMENT_TPL = "//*[@text='(SUBSTRING)']";
++
++    public MyListsPageObject(AppiumDriver driver){
++        super(driver);
++    }
++
++    private static String getListElement(String substring) {
++        return  LIST_ELEMENT_TPL.replace("(SUBSTRING)",substring);
++    }
++
++    public void openList(String name) {
++        this.waitForElementPresentAndClick(By.xpath(getListElement(name)),"no list with selected name", 5);
++    }
++}
+diff --git a/src/lib/ui/SearchPageObject.java b/src/lib/ui/SearchPageObject.java
+new file mode 100644
+index 0000000..58d6b98
+--- /dev/null
++++ b/src/lib/ui/SearchPageObject.java
+@@ -0,0 +1,87 @@
++package lib.ui;
++
++import io.appium.java_client.AppiumDriver;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++
++import java.util.List;
++
++public class SearchPageObject extends MainPageObject {
++
++    private static final String
++        SEARCH_INPUT_ELEMENT = "//*[contains(@text,'Search Wikipedia')]",
++        SEARCH_INPUT = "//*[contains(@text,'Search…')]",
++        SEARCH_RESULT_TPL = "//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='(SUBSTRING)']",
++        SEARCH_RESULTS_ITEMS = "//*[@resource-id='org.wikipedia:id/page_list_item_title']",
++        SEARCH_CANCEL_BUTTON = "org.wikipedia:id/search_close_btn",
++        NAVIGATE_MY_LISTS = "//android.widget.FrameLayout[@content-desc='My lists']",
++        SEARCH_RESULT_DOUBLE_TPL = "//*[android.widget.TextView[@index=0 and @text='(SUBSTRING_1)'] and android.widget.TextView[@index=1 and @text='(SUBSTRING_2)']]";
++
++
++
++
++    public SearchPageObject(AppiumDriver driver){
++        super(driver);
++    }
++
++    private static String getSearchResultElement(String substring) {
++        return  SEARCH_RESULT_TPL.replace("(SUBSTRING)",substring);
++    }
++
++    private static String getSearchResultElementByTwoConditions(String substring_1, String substring_2) {
++        return  SEARCH_RESULT_DOUBLE_TPL.replace("(SUBSTRING_1)",substring_1).replace("(SUBSTRING_2)",substring_2);
++    }
++
++    public void initSearchInput() {
++        this.waitForElementPresentAndClick(By.xpath(SEARCH_INPUT_ELEMENT),
++                "Can't find and search element", 5);
++        this.waitForElementPresent(By.xpath(SEARCH_INPUT_ELEMENT),
++                "Can't find search after click", 5);
++    }
++
++    public void waitForCancelButtonToAppear(){
++        this.waitForElementPresent(By.id(SEARCH_CANCEL_BUTTON), "no cancel button", 5);
++    }
++
++    public void waitForCancelButtonToDisaappear(){
++        this.waitForElementNotPresent(By.id(SEARCH_CANCEL_BUTTON), "no cancel button", 5);
++    }
++
++    public void clickCancelSearch() {
++        this.waitForElementPresentAndClick(By.id(SEARCH_CANCEL_BUTTON), "no cacncel button", 5);
++    }
++
++    public void typeSearchText(String search_line) {
++        this.waitForElementPresentAndSendKeys(By.xpath(SEARCH_INPUT), search_line,"can't type into search input",5);
++    }
++
++    public void waitForSearchResult(String search_string) {
++        this.waitForElementPresent(By.xpath(getSearchResultElement(search_string)), "there are no search results", 5);
++    }
++
++    public List<WebElement> waitForSearchResults(String search_string) {
++       return this.waitForElementsPresent(By.xpath(getSearchResultElement(search_string)), "there are no search results", 5);
++    }
++
++    public void clickByArticleWithSubstring(String substring) {
++        this.waitForElementPresentAndClick(By.xpath(getSearchResultElement(substring)), "there are no search results", 5);
++    }
++
++    public boolean isSearchEmpty(String substring) {
++        return this.waitForElementNotPresent(By.xpath(getSearchResultElement(substring)), "there are search results", 5 );
++    }
++
++    public void goToMyLists() {
++        this.waitForElementPresentAndClick(By.xpath(NAVIGATE_MY_LISTS), "no my lists menu",5);
++    }
++
++    public WebElement waitForElementByTitleAndDescription(String title, String description) {
++        return this.waitForElementPresent(By.xpath(getSearchResultElementByTwoConditions(title,description)), "results do not contain both correct parameters title and description" + title + description  , 10);
++    }
++
++    public  List<WebElement> getSearchResultsList() {
++
++        return this.waitForElementsPresent(By.xpath(SEARCH_RESULTS_ITEMS), "no search results", 5);
++
++    }
++}
+\ No newline at end of file
