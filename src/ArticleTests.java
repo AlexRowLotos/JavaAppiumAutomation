@@ -1,16 +1,14 @@
 import lib.CoreTestCase;
 
-import lib.ui.ArticlePageObject;
-import lib.ui.ListDetailsPageObject;
-import lib.ui.MyListsPageObject;
-import lib.ui.SearchPageObject;
+import lib.ui.android.ArticlePageObject;
+import lib.ui.android.ListDetailsPageObject;
+import lib.ui.android.MyListsPageObject;
+import lib.ui.android.SearchPageObject;
 import org.junit.Test;
-
-
 
 public class ArticleTests extends CoreTestCase {
 
-    protected void setUp() throws Exception {
+    public void setUp() throws Exception {
         super.setUp();
     }
 
@@ -22,7 +20,6 @@ public class ArticleTests extends CoreTestCase {
         };
 
         String myList = "OOP";
-
         SearchPageObject searchPageObject = new SearchPageObject(driver);
 
         searchPageObject.initSearchInput();
@@ -60,4 +57,7 @@ public class ArticleTests extends CoreTestCase {
     }
 
 
+    public void tearDown() throws Exception {
+        super.tearDown();
+    }
 }

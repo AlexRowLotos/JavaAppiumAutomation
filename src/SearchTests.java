@@ -1,6 +1,6 @@
 import lib.CoreTestCase;
-import lib.ui.ArticlePageObject;
-import lib.ui.SearchPageObject;
+import lib.ui.android.ArticlePageObject;
+import lib.ui.android.SearchPageObject;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 public class SearchTests extends CoreTestCase {
 
-    protected void setUp() throws Exception {
+    public void setUp() throws Exception {
         super.setUp();
     }
 
