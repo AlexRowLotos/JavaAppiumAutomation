@@ -1,6 +1,8 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import lib.Platform;
+import lib.ui.ios.OnboardingPageObjectIos;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 
@@ -76,5 +78,12 @@ abstract public class SearchPageObject  extends MainPageObject{
 
     public  List<WebElement> getSearchResultsList() {
         return this.waitForElementsPresent(SEARCH_RESULTS_ITEMS, "no search results", 5);
+    }
+
+    public void skipOnboardingForIos() {
+        if (Platform.getInstance().isIOS()) {
+            OnboardingPageObjectIos onboardingPageObject = new OnboardingPageObjectIos(driver);
+            onboardingPageObject.skipOnboarding();
+        }
     }
 }

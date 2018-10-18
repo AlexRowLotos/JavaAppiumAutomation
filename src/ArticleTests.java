@@ -28,13 +28,9 @@ public class ArticleTests extends CoreTestCase {
 
         String myList = "OOP";
 
-        if(Platform.getInstance().isIOS()){
-            OnboardingPageObjectIos onboardingPageObject = new OnboardingPageObjectIos(driver);
-            onboardingPageObject.skipOnboarding();
-        }
-
         SearchPageObject searchPageObject = SearchPageObjectFactory.getPage(driver);
 
+        searchPageObject.skipOnboardingForIos();
         searchPageObject.initSearchInput();
         searchPageObject.typeSearchText(words[0]);
         searchPageObject.waitForSearchResult(words[0]);
