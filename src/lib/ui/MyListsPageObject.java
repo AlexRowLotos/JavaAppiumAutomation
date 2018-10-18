@@ -1,18 +1,20 @@
-package lib.ui.android;
+package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
-import lib.ui.MainPageObject;
-import org.openqa.selenium.By;
 
 public class MyListsPageObject extends MainPageObject {
 
-    private static final String
-        LIST_ELEMENT_TPL = "xpath://*[@name='(SUBSTRING)']";
+    public static String
+            READING_LIST_TAB,
+            LIST_ELEMENT_TPL;
 
-    public MyListsPageObject(AppiumDriver driver){
+    public MyListsPageObject(AppiumDriver driver) {
         super(driver);
     }
 
+    public void openReadingListsTab(){
+        this.waitForElementPresentAndClick(READING_LIST_TAB, "there is no reading lists tab", 5);
+    }
     private static String getListElement(String substring) {
         return LIST_ELEMENT_TPL.replace("(SUBSTRING)",substring);
     }

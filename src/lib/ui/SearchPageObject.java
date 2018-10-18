@@ -1,25 +1,19 @@
-package lib.ui.android;
+package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
-import lib.ui.MainPageObject;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 
-public class SearchPageObject extends MainPageObject {
+abstract public class SearchPageObject  extends MainPageObject{
 
-    private static final String
-        SEARCH_INPUT_ELEMENT = "xpath://*[contains(@text,'Search Wikipedia')]",
-        SEARCH_INPUT = "xpath://*[contains(@text,'Search…')]",
-        SEARCH_RESULT_TPL = "xpath://*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='(SUBSTRING)']",
-        SEARCH_RESULTS_ITEMS = "xpath://*[@resource-id='org.wikipedia:id/page_list_item_title']",
-        SEARCH_CANCEL_BUTTON = "id:org.wikipedia:id/search_close_btn",
-        NAVIGATE_MY_LISTS = "xpath://android.widget.FrameLayout[@content-desc='My lists']",
-        SEARCH_RESULT_DOUBLE_TPL = "xpath://*[android.widget.TextView[@index=0 and @text='(SUBSTRING_1)'] and android.widget.TextView[@index=1 and @text='(SUBSTRING_2)']]";
-
-
-
+    protected static String
+        SEARCH_INPUT_ELEMENT,
+        SEARCH_INPUT,
+        SEARCH_RESULT_TPL,
+        SEARCH_RESULTS_ITEMS,
+        SEARCH_CANCEL_BUTTON,
+        NAVIGATE_MY_LISTS,
+        SEARCH_RESULT_DOUBLE_TPL;
 
     public SearchPageObject(AppiumDriver driver){
         super(driver);
@@ -61,7 +55,7 @@ public class SearchPageObject extends MainPageObject {
     }
 
     public List<WebElement> waitForSearchResults(String search_string) {
-       return this.waitForElementsPresent(getSearchResultElement(search_string), "there are no search results", 5);
+        return this.waitForElementsPresent(getSearchResultElement(search_string), "there are no search results", 5);
     }
 
     public void clickByArticleWithSubstring(String substring) {
@@ -81,8 +75,6 @@ public class SearchPageObject extends MainPageObject {
     }
 
     public  List<WebElement> getSearchResultsList() {
-
         return this.waitForElementsPresent(SEARCH_RESULTS_ITEMS, "no search results", 5);
-
     }
 }
